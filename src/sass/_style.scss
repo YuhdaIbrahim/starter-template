@@ -1,0 +1,201 @@
+/***************
+  Typography 
+ ***************/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+body,
+a,
+span,
+p,
+ul,
+li,
+* {
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+html {
+  overflow-x: hidden;
+  overflow-y: scroll !important;
+  scroll-behavior: auto !important;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  color: #000;
+  overflow: hidden;
+  -ms-overflow-style:none;
+  position: relative;
+  top: 0;
+  left: 0;
+
+  &.no-overflow {
+    overflow: unset;
+  }
+
+  &.scroll-lock,
+  &.lock-scroll {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+  }
+
+  &.lockscroll {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+  }
+
+  &.modal-open {
+    padding-right: 0 !important;
+  }
+
+  .modal-backdrop.fade {
+    transition: all 0.35s;
+  }
+
+  .modal-backdrop.show {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
+  }
+
+  .fancybox-slide--html {
+    padding: 0;
+  }
+  .fancybox-bg {
+    // background-color: transparent;
+  }
+
+  section {
+    z-index: 2;
+  }
+
+  .content-area {
+    position: relative;
+    width: 1280px;
+    max-width: 100%;
+    padding: 0 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  a,
+  button,
+  input,
+  select,
+  textarea {
+    transition: all 0.35s;
+
+    &:focus,
+    &:hover {
+      box-shadow: none !important;
+      outline: none !important;
+      text-decoration: none;
+      transition: all 0.35s;
+    }
+  }
+
+  sup {
+    top: -1.7em;
+    font-size: 30%;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      color: inherit;
+    }
+  }
+
+  .barlow_semi {
+    font-family: "Barlow Semi Condensed", sans-serif !important;
+  }
+
+  p {
+    font-family: "Barlow", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%
+  }
+
+  h1 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 104px;
+    line-height: 102%;
+  }
+
+  h2 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 52px;
+    line-height: normal;
+  }
+
+  h3 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: normal;
+  }
+
+  h4 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 17px;
+    color: #777777;
+  }
+
+  strong {
+    font-weight: 700;
+  }
+
+  .btn {
+    font-family: "Barlow Condensed", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: normal;
+    text-align: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #fff;
+    background: linear-gradient(90deg, rgba(40,134,72,1) 0%, rgba(42,175,86,1) 100%);
+    border: 1px solid transparent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 21px;
+    transition: all 0.35s;
+    border-radius: 4px;
+
+    &.large {
+      font-size: 21px;
+    }
+
+    &.btn-primary {
+      color: #fff;
+      background: linear-gradient(90deg, rgba(40,134,72,1) 0%, rgba(42,175,86,1) 100%);
+      border: 1px solid transparent;
+
+      &:hover {
+        background: linear-gradient(90deg, #2AAF56 0%, #2AAF56 100%);
+        transition: all 0.35s;
+      }
+    }
+  }
+}
